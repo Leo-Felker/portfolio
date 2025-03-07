@@ -1,0 +1,154 @@
+
+/* formatting */
+* {
+    box-sizing: border-box;
+    color: rgb(54, 50, 50);
+}
+
+/* background styling */
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: url("images/galaxy.jpg") center center fixed; 
+    background-size: cover;
+    padding: 40px 20px;          
+    min-height: 100vh;             
+    position: relative;  
+}
+
+/* header font styling */
+h1 {
+    font-size: 2.5em;
+    color: rgb(54, 50, 50);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    border-bottom: 3px solid;
+    color: rgb(54, 50, 50);
+}
+
+#heading {
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* header styling */
+header{
+    background: white;
+    box-shadow: 0 4px 15px black;               
+    padding: 15px;               
+    border-radius: 0px;         
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    backdrop-filter: blur(5px); 
+    width: 100%;   
+}
+
+/* paragraph styling */
+p {
+    line-height: 1.6;
+    color: rgb(54, 50, 50);
+}
+
+/* transitions */
+header:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* transitions */
+.children:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* organization */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* background of content */
+section {
+    flex: 1 1 calc(50% - 20px);
+    background: white;
+    box-shadow: 0 4px 15px black;               
+    padding: 15px;               
+    border-radius: 25px;         
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    backdrop-filter: blur(5px);  
+    min-width: 300px;                  
+    margin-top: 20px;                    
+    margin-bottom: 20px;  
+}
+
+/* footer styling */
+footer {
+    width: 100%;
+    flex: 1 1 calc(50% - 20px);
+    background: white;              
+    padding: 15px;               
+    border-radius: 0px;         
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    backdrop-filter: blur(5px);  
+    text-align: center;
+    box-shadow: 0 4px 15px black;  
+    color: rgb(54, 50, 50);
+}
+
+/* hyperlink styling */
+.contact-info {
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* more hyperlink styling */
+.contact-link {
+    text-decoration: none;
+    color: #333;
+}
+.contact-link[href^="mailto"] {
+    color: blue;
+}
+.contact-link[href^="tel"] {
+    color: green;
+}
+.contact-link[href^="https://www.instagram.com/pandale0/?hl=en"] {
+    color: red;
+}
+
+/* images styling */
+.contact-icon {
+    width: max-content;
+    height: 14px;
+    padding-left: 30px;
+    vertical-align: middle;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;       
+    }
+
+    section {
+        flex: 1 1 100%;
+        width: 100%       
+    }
+
+    header h1 {
+        font-size: 2em;         
+    }
+
+    .image-container {
+        height: auto;             
+    }
+}
