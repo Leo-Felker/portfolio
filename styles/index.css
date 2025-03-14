@@ -75,7 +75,7 @@ header{
 /* header image styling */
 .header {
     height: 300px;
-    background-image: url("/images/Kahan.3.webp"); 
+    background-image: URL("../images/Kahan.3.webp"); 
     background-position: center;
     background-size: cover;
     justify-content: center;
